@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+body{
+    background: url(./download.jpeg);
+    background-size: cover;
+}
+.quotation {
+    background: #fff;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    padding: 50px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.quotation h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.quotation h2::after{
+    content: '';
+    width: 75px;
+    height: 5px;
+    border-radius: 5px;
+    left: 50%;
+    bottom: -10px;
+    position: absolute;
+    transform: translateX(-50%);
+    background: #732;
+}
+.quotation blockquote{
+    font-size: 28px;
+    min-height: 50px;
+}
+.quotation blockquote::before,.quotation blockquote::after{
+    content: '"';
+}
+.quotation span{
+    display: block;
+    margin-top: 10px;
+    float:right;
+    position: relative;
+}
+.quotation span::before{
+    content: '';
+    width:20px;
+    height:2px;
+    background: rgb(25, 68, 94);
+    position: absolute;
+    top: 50%;
+    left:-30px;
+}
+.quotation div{
+    width: 100%;
+    margin: top 45px; 
+    display: flex;
+    justify-content: center;
+}
+.quotation button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width:150px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+} 
+.quotation button img{
+    width: 38px;
+    margin-right: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+}  
+.quotation button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
